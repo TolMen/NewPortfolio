@@ -1,0 +1,35 @@
+/* En-tête / Section de présentation */
+.header {
+    place-content: center;
+    background: url(../assets/imgPrincipal.jpg) no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 50vh;
+    border-bottom: 1px solid black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.header .text {
+    padding-left: 25px;
+}
+
+.header .text h1 {
+    color: black;
+    font-weight: bold;
+    font-size: 70px;
+}
+
+.header .text p {
+    color: black;
+    font-size: 20px;
+}
+
+.badge-web {
+    display: inline-block;
+    padding: 0.125rem 0.625rem;
+    font-size: 0.875rem;
+    white-space: nowrap;
+    background-color: #f3e8ff;
+    color: #7e22ce;
+    border-radius: 9999px;
+}

@@ -1,0 +1,45 @@
+/* ---------------------------- Base CSS ---------------------------- */
+
+/* Importing the Poppins font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+/* Reset default styles for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+}
+
+/* body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+} */
+
+/* Navbar */
+.custom-navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.custom-navbar a {
+    text-decoration: none;
+}
+
+.navbar-nav .custom-nav-link.active {
+    font-weight: bold;
+    color: black !important;
+}
+
+/* Footer */
+.custom-footer {
+    border-top: 1px solid #000;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.15);
+    z-index: 1020;
+}
