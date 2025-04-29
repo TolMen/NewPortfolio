@@ -1,70 +1,53 @@
 
-.main-container {
+
+/* Form box */
+
+.boxContact {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    flex-grow: 1;
-    padding: 25px 0;
-}
-
-/* ---------------------------------------------------------------------- */
-
-/* Form box */
-
-.box {
-    position: relative;
-    width: 800px;
-    height: 585px;
-    border-radius: 8px;
-    overflow: hidden;
+    padding: 50px 0;
 }
 
 /* ---------------------------------------------------------------------- */
 
 /* Form */
 
-.box form {
-    background: rgba(255, 255, 255, 0.75);
-    position: absolute;
-    inset: 4px;
-    padding: 50px 40px;
-    border-radius: 8px;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid black;
-}
-
-.box form h2 {
+.boxContact h2 {
     color: black;
-    font-weight: 500;
+    font-weight: bold;
     text-align: center;
     letter-spacing: 0.1em;
-    margin-bottom: 25px;
+    padding-bottom: 50px;
 }
 
-.box .boxIdentity {
+.boxContact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.boxContact .boxIdentity {
     display: flex;
     gap: 20px;
 }
 
 /* Input fields */
-.box form .inputBoxIdentity,
-.box form .inputBoxOther {
+.boxContact form .inputBoxIdentity,
+.boxContact form .inputBoxOther {
     position: relative;
 }
 
-.box form .inputBoxOther {
+.boxContact form .inputBoxOther {
     margin-top: 35px;
     width: 300px;
 }
 
-.box .boxIdentity .inputBoxIdentity {
+.boxContact .boxIdentity .inputBoxIdentity {
     flex: 1;
 }
 
-.box form .inputBox textarea {
+.boxContact form .inputBox textarea {
     position: relative;
     width: 100%;
     height: 150px;
@@ -81,7 +64,7 @@
     z-index: 10;
 }
 
-.box form .inputBox .spanTextarea {
+.boxContact form .inputBox .spanTextarea {
     position: absolute;
     top: -45px;
     left: 0px;
@@ -93,16 +76,16 @@
     font-size: 0.75em;
 }
 
-.box form .inputBoxOther.full-width {
+.boxContact form .inputBoxOther.full-width {
     width: 100%;
 }
 
-.box form .inputBoxOther.margeBottom {
+.boxContact form .inputBoxOther.margeBottom {
     margin-bottom: 35px;
 }
 
 
-.box form .inputBox input {
+.boxContact form .inputBox input {
     position: relative;
     width: 100%;
     padding: 20px 10px 10px;
@@ -117,7 +100,7 @@
     z-index: 10;
 }
 
-.box form .inputBox span {
+.boxContact form .inputBox span {
     position: absolute;
     left: 0;
     padding: 20px 0px 10px;
@@ -128,14 +111,14 @@
     transition: 0.5s;
 }
 
-.box form .inputBox input:valid ~ span,
-.box form .inputBox input:focus ~ span {
+.boxContact form .inputBox input:valid ~ span,
+.boxContact form .inputBox input:focus ~ span {
     color: black;
     font-size: 0.75em;
     transform: translateY(-34px);
 }
 
-.box form .inputBox i {
+.boxContact form .inputBox i {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -147,20 +130,20 @@
     pointer-events: none;
 }
 
-.box form .inputBox input:valid ~ i,
-.box form .inputBox input:focus ~ i {
+.boxContact form .inputBox input:valid ~ i,
+.boxContact form .inputBox input:focus ~ i {
     height: 44px;
     background: transparent;
 }
 
 /* Form link */
 
-.box form .links {
+.boxContact form .links {
     display: flex;
     justify-content: end;
 }
 
-.box form .links a {
+.boxContact form .links a {
     margin: 10px 10px;
     font-size: 0.75em;
     color: black;
@@ -169,7 +152,7 @@
 
 /* Form button final */
 
-.box form input[type="submit"] {
+.boxContact form input[type="submit"] {
     outline: none;
     padding: 9px 5px;
     background: white;
@@ -183,11 +166,11 @@
     border: 2px solid black;
 }
 
-.box form input[type="submit"]:hover {
-    background: whitesmoke;
+.boxContact form input[type="submit"]:hover {
+    background: rgba(128, 128, 128, 0.25);
 }
 
-.box form input[type="submit"]:active {
+.boxContact form input[type="submit"]:active {
     opacity: 0.8;
 }
 
@@ -196,25 +179,25 @@
 /* CSS Responsive */
 
 @media screen and (max-width: 991px) {
-    .box {
+    .boxContact {
         width: 600px;
     }
 }
 
 @media screen and (max-width: 675px) {
-    .box {
+    .boxContact {
         width: 500px;
     }
 }
 
 @media screen and (max-width: 550px) {
-    .box {
+    .boxContact {
         width: 400px;
     }
 }
 
 @media screen and (max-width: 450px) {
-    .box {
+    .boxContact {
         width: 350px;
     }
 }
