@@ -5,10 +5,9 @@
     <meta name="mobile-web-app-capable" content="yes" />
 
     <!-- SEO information -->
-    <meta name="keywords" content="article, wiki, civilisations, histoire, cultures anciennes, connaissances, partage, gestion de contenu, SLAM, BTS SIO, projet collaboratif, PHP, développement web">
-    <meta name="description" content="Explorez les civilisations et l'histoire grâce à une plateforme de gestion de contenu conçue en équipe, utilisant PHP, Bootstrap et des pratiques modernes de développement web.
-    Un projet SLAM réalisé dans le cadre du BTS SIO en équipe de 3." />
-    <meta name="author" content="Nolan / Kelly / Jessy" />
+    <meta name="keywords" content="">
+    <meta name="description" content="" />
+    <meta name="author" content="Jessy" />
 
     <!-- Site icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="public/favicon.ico" />
@@ -22,6 +21,7 @@
     <link rel="stylesheet" href="public/css/baseStyle.css" />
     <link rel="stylesheet" href="public/css/styleContactForm.css" />
     <link rel="stylesheet" href="public/css/styleHeader.css" />
+    <link rel="stylesheet" href="public/css/styleProject.css" />
 
     <!-- Title -->
     <title>PortFolio</title>
