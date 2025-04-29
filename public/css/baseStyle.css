@@ -13,6 +13,10 @@
     font-family: "Poppins", sans-serif;
 }
 
+h1, h2, p {
+    margin: 0;
+}
+
 /* body {
     display: flex;
     flex-direction: column;
@@ -30,11 +34,12 @@
 
 .custom-navbar a {
     text-decoration: none;
+    font-weight: 500;
+    transition: .2s ease-in;
 }
 
-.navbar-nav .custom-nav-link.active {
-    font-weight: bold;
-    color: black !important;
+.custom-navbar a:hover {
+    color: black;
 }
 
 /* Footer */
