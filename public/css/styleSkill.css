@@ -1,0 +1,142 @@
+.boxSkill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 0;
+}
+
+.boxSkill .titleSkill {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0.1em;
+    padding-bottom: 40px;
+    font-size: 35px;
+}
+
+.skillGrid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.skillCol {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+    padding: 0 20px;
+    position: relative;
+}
+
+.skillCol h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.iconGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.iconGroup span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border: 2px solid black;
+    border-radius: 30%;
+    font-size: 26px;
+    color: black;
+    background: white;
+    transition: 0.5s ease-in;
+}
+
+.iconGroup span:hover {
+    background: #f3e8ff;
+    color: #7e22ce;
+    box-shadow: 0 0 20px #f3e8ff, 0 0 40px #f3e8ff;
+    border: 2px solid #7e22ce;
+}
+
+.skillGrid .skillCol:nth-child(2)::after,
+.skillGrid .skillCol:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    height: 80%;
+    width: 1px;
+    background-color: black;
+}
+
+.skillGrid .skillCol:nth-child(2)::after {
+    top: 10%;
+    right: 0;
+}
+
+.skillGrid .skillCol:nth-child(2)::before {
+    bottom: 10%;
+    left: 0;
+}
+
+@media screen and (max-width: 840px) {
+    .boxSkill .titleSkill {
+        font-size: 30px;
+    }
+
+    .iconGroup span {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    .boxSkill {
+        padding: 30px 0;
+    }
+
+    .boxSkill .titleSkill {
+        font-size: 25px;
+        padding-bottom: 30px;
+    }
+
+    .skillCol h3 {
+        font-size: 15px;
+    }
+
+    .iconGroup span {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .skillGrid {
+        flex-wrap: nowrap;
+    }
+
+    .skillCol {
+        min-width: 0px;
+    }
+
+    .skillCol h3 {
+        font-size: 12px;
+    }
+
+    .boxSkill .titleSkill {
+        font-size: 20px;
+    }
+}
