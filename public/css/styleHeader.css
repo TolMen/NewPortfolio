@@ -10,7 +10,7 @@
 }
 
 .header .text {
-    padding-left: 25px;
+    padding: 0 25px;
 }
 
 .header .text h1 {
@@ -28,8 +28,8 @@
 
 .badge-web {
     display: inline-block;
-    padding: 0.1em 0.6em;
-    font-size: 0.875rem;
+    padding: 1px 9px;
+    font-size: 14px;
     white-space: nowrap;
     background-color: #f3e8ff;
     color: #7e22ce;
@@ -43,13 +43,14 @@
     align-items: center;
     width: 60px;
     height: 60px;
-    background: transparent;
+    background: white;
     border: 2px solid black;
-    border-radius: 50%;
+    border-radius: 30%;
     font-size: 28px;
     color: black;
     text-decoration: none;
-    margin: 10px 10px 10px 0;
+    margin-right: 10px;
+    margin-top: 10px;
     transition: .5s ease-in;
 }
 
@@ -58,4 +59,51 @@
     color: #7e22ce;
     box-shadow: 0 0 20px #f3e8ff, 0 0 40px #f3e8ff;
     border: 2px solid #7e22ce;
+}
+
+
+@media screen and (max-width: 840px) {
+    .header {
+        height: 40vh;
+    }
+
+    .header .text h1 {
+        font-size: 50px;
+    }
+
+    .header .text p {
+        font-size: 15px;
+        margin: 10px 0;
+    }
+
+    .header .text .social-icon a {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .header {
+        height: 30vh;
+    }
+
+    .header .badge-web {
+        font-size: 12px;
+    }
+
+    .header .text h1 {
+        font-size: 35px;
+    }
+
+    .header .text p {
+        font-size: 13px;
+        margin: 5px 0;
+    }
+
+    .header .text .social-icon a {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
 }

@@ -1,6 +1,6 @@
 /* ---------------------------- Base CSS ---------------------------- */
 
-/* Importing the Poppins font */
+/* Importing the Poppins font from Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 
 /* Reset default styles for all elements */
@@ -13,17 +13,14 @@
     font-family: "Poppins", sans-serif;
 }
 
+/* Remove default margin for common elements */
 h1, h2, p {
     margin: 0;
 }
 
-/* body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-} */
+/* ---------------------------- Navbar ---------------------------- */
 
-/* Navbar */
+/* Sticky navigation bar with shadow and border */
 .custom-navbar {
     position: sticky;
     top: 0;
@@ -32,19 +29,49 @@ h1, h2, p {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
 }
 
+/* Navigation link styles */
 .custom-navbar a {
     text-decoration: none;
     font-weight: 500;
-    transition: .2s ease-in;
-}
-
-.custom-navbar a:hover {
+    transition: .5s ease-in;
     color: black;
 }
 
-/* Footer */
+/* Hover effect for nav links */
+.custom-navbar a:hover {
+    color: #7e22ce;
+}
+
+/* ---------------------------- Footer ---------------------------- */
+
+/* Footer styling with top border and shadow */
 .custom-footer {
     border-top: 1px solid #000;
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.15);
     z-index: 1020;
+}
+
+/* Social icons in footer */
+.custom-footer .social-icon a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background: white;
+    border: 2px solid black;
+    border-radius: 30%;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    margin: 5px 0;
+    transition: 0.5s ease-in;
+}
+
+/* Hover effect for footer icons */
+.custom-footer .social-icon a:hover {
+    background: #f3e8ff;
+    color: #7e22ce;
+    box-shadow: 0 0 20px #f3e8ff, 0 0 40px #f3e8ff;
+    border: 2px solid #7e22ce;
 }

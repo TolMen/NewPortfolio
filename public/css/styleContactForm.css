@@ -1,13 +1,17 @@
-
-
 /* Form box */
+
+.boxMainContact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .boxContact {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 50px 0;
+    padding: 40px 0;
 }
 
 /* ---------------------------------------------------------------------- */
@@ -19,7 +23,8 @@
     font-weight: bold;
     text-align: center;
     letter-spacing: 0.1em;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
+    font-size: 35px;
 }
 
 .boxContact form {
@@ -83,7 +88,6 @@
 .boxContact form .inputBoxOther.margeBottom {
     margin-bottom: 35px;
 }
-
 
 .boxContact form .inputBox input {
     position: relative;
@@ -164,10 +168,14 @@
     margin-top: 20px;
     color: black;
     border: 2px solid black;
+    transition: .5s ease-in;
 }
 
 .boxContact form input[type="submit"]:hover {
-    background: rgba(128, 128, 128, 0.25);
+    background: #f3e8ff;
+    color: #7e22ce;
+    box-shadow: 0 0 20px #f3e8ff, 0 0 40px #f3e8ff;
+    border: 2px solid #7e22ce;
 }
 
 .boxContact form input[type="submit"]:active {
@@ -190,6 +198,22 @@
     }
 }
 
+@media screen and (max-width: 640px) {
+    .boxContact {
+        padding: 30px 0;
+    }
+
+    .boxContact h2 {
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .boxContact h2 {
+        font-size: 20px;
+    }
+}
+
 @media screen and (max-width: 550px) {
     .boxContact {
         width: 400px;
@@ -201,6 +225,5 @@
         width: 350px;
     }
 }
-
 
 /* ---------------------------------------------------------------------- */

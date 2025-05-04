@@ -1,26 +1,26 @@
 .boxProject {
     display: grid;
     place-items: center;
-    padding-top: 50px;
-    padding-bottom: 74px;
+    padding-top: 40px;
+    padding-bottom: 65px;
     border-top: 1px solid #000;
     border-bottom: 1px solid black;
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.15), 0 4px 6px rgba(0, 0, 0, 0.15);
 }
-
 
 .boxProject .sectiontitle {
     color: black;
     font-weight: bold;
     text-align: center;
     letter-spacing: 0.1em;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
+    font-size: 35px;
 }
 
 .boxCard {
     display: grid;
-    row-gap: 56px;
-    grid-template-columns: 1fr;
+    column-gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .artCard {
@@ -41,25 +41,28 @@
     left: 70px;
 }
 
+.artCard .b3 {
+    left: 130px;
+}
+
 .imgCard {
-    width: 330px;
-    height: 360px;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
     border-radius: 23px;
 }
 
-.artCard:nth-child(1) .imgCard{
+.artCard:nth-child(1) .imgCard {
     object-fit: contain;
 }
 
 .dataCard {
-    width: 280px;
+    width: 270px;
     background-color: #ffffff;
-    padding: 24px 32px;
+    padding: 20px 25px;
     box-shadow: 0 8px 24px #00000026;
     border-radius: 16px;
     position: absolute;
-    bottom: -144px;
     left: 0;
     right: 0;
     margin-inline: auto;
@@ -69,20 +72,19 @@
 
 .bioCard {
     display: block;
-    font-size: 0.813em;
-    margin-bottom: 4px;
+    font-size: 12px;
+    padding-top: 5px;
 }
 
 .titleCard {
-    font-size: 1.25em;
+    font-size: 1em;
     font-weight: 500;
     color: #262626;
-    margin-bottom: 12px;
 }
 
 .buttonCard {
     text-decoration: none;
-    font-size: 0.813em;
+    font-size: 12px;
     font-weight: 500;
     color: #7e22ce;
 }
@@ -92,12 +94,6 @@
 }
 
 /* Naming animations in hover */
-.artCard:hover .dataCard {
-    animation: show-data 1s forwards;
-    opacity: 1;
-    transition: opacity 0.3s;
-}
-
 .artCard:hover .dataCard {
     animation: show-data 1s forwards;
     opacity: 1;
@@ -122,7 +118,7 @@
         transform: translateY(-160px);
     }
     100% {
-        transform: translateY(-112px);
+        transform: translateY(-100px);
     }
 }
 
@@ -134,7 +130,7 @@
 
 @keyframes remove-data {
     0% {
-        transform: translateY(-112px);
+        transform: translateY(-100px);
     }
     50% {
         transform: translateY(-160px);
@@ -155,32 +151,115 @@
 }
 
 /*=============== BREAKPOINTS ===============*/
-/* For small devices */
-@media screen and (max-width: 340px) {
-    .dataCard {
-        width: 250px;
-        padding: 16px;
-    }
-}
-
-/* For medium devices */
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1070px) {
     .boxCard {
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 24px;
+        column-gap: 25px;
     }
-}
 
-/* For large devices */
-@media screen and (min-width: 1120px) {
-    .boxCard {
-        grid-template-columns: repeat(3, 1fr);
-    }
     .imgCard {
-        width: 348px;
+        width: 270px;
+        height: 270px;
     }
+
     .dataCard {
-        width: 316px;
-        padding-inline: 40px;
+        width: 240px;
+    }
+
+    .bioCard {
+        font-size: 10px;
+    }
+
+    .buttonCard {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .boxCard {
+        column-gap: 18px;
+    }
+
+    .imgCard {
+        width: 240px;
+        height: 240px;
+    }
+
+    .titleCard {
+        font-size: 0.95em;
+    }
+
+    .dataCard {
+        width: 215px;
+        padding: 18px 15px;
+    }
+
+    .artCard:hover .dataCard {
+        animation: show-data-small 1s forwards;
+    }
+
+    .artCard:not(:hover) .dataCard {
+        animation: remove-data-small 1s forwards;
+    }
+}
+
+@keyframes show-data-small {
+    50% {
+        transform: translateY(-160px);
+    }
+    100% {
+        transform: translateY(-85px);
+    }
+}
+
+@keyframes remove-data-small {
+    0% {
+        transform: translateY(-85px);
+    }
+    50% {
+        transform: translateY(-160px);
+    }
+    100% {
+        transform: translateY(8px);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .boxCard {
+        grid-template-columns: none;
+        row-gap: 40px;
+    }
+
+    .imgCard {
+        width: 270px;
+        height: 270px;
+    }
+
+    .dataCard {
+        width: 240px;
+    }
+
+    .bioCard {
+        font-size: 10px;
+    }
+
+    .buttonCard {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .boxProject {
+        padding-top: 30px;
+        padding-bottom: 55px;
+    }
+
+    .boxProject .sectiontitle {
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .boxProject .sectiontitle {
+        font-size: 20px;
     }
 }
