@@ -2,7 +2,7 @@
     display: grid;
     place-items: center;
     padding-top: 40px;
-    padding-bottom: 65px;
+    padding-bottom: 95px;
     border-top: 1px solid #000;
     border-bottom: 1px solid black;
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.15), 0 4px 6px rgba(0, 0, 0, 0.15);
@@ -31,25 +31,23 @@
     border-radius: 24px;
 }
 
-.artCard .badge-web {
-    position: absolute;
-    top: 16px;
-    left: 16px;
-}
-
-.artCard .b2 {
-    left: 70px;
-}
-
-.artCard .b3 {
-    left: 130px;
-}
-
 .imgCard {
+    position: relative;
     width: 300px;
     height: 300px;
     object-fit: cover;
     border-radius: 23px;
+}
+
+.badgeProject {
+    display: inline-block;
+    padding: 1px 9px;
+    font-size: 10px;
+    white-space: nowrap;
+    background-color: #f3e8ff;
+    color: #7e22ce;
+    border-radius: 9999px;
+    border: 1px solid #7e22ce;
 }
 
 .artCard:nth-child(1) .imgCard {
@@ -226,7 +224,7 @@
 @media screen and (max-width: 800px) {
     .boxCard {
         grid-template-columns: none;
-        row-gap: 40px;
+        row-gap: 85px;
     }
 
     .imgCard {
@@ -250,7 +248,7 @@
 @media screen and (max-width: 640px) {
     .boxProject {
         padding-top: 30px;
-        padding-bottom: 55px;
+        padding-bottom: 95px;
     }
 
     .boxProject .sectiontitle {
