@@ -32,6 +32,7 @@
                 <a href="https://github.com/TolMen" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/jessyfrachisse/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
                 <a href="public/assets/files/CVJessy.png" target="_blank" title="CV"><i class="fa-solid fa-file-lines"></i></a>
+                <a href="tel:+33667689169" title="Téléphonez-moi"><i class="fa-solid fa-phone-volume"></i></a>
                 <a href="#contact" title="Contactez-moi"><i class="fa-solid fa-comment"></i></a>
             </nav>
         </div>
@@ -94,8 +95,10 @@
                 <img src="public/assets/imgProjetBHE.jpg" alt="Image de mon projet BHE" class="imgCard">
                 <div class="dataCard">
                     <h2 class="titleCard">Black Hole Evénements</h2>
+                    <span class="badgeProject">PHP</span>
+                    <span class="badgeProject">SQL</span>
                     <span class="bioCard">Site vitrine réalisé de A à Z pour une entreprise d'audiovisuelle à Riom.</span>
-                    <a href="#" class="buttonCard">En savoir plus</a>
+                    <a href="#" class="buttonCard">Voir la démo</a>
                 </div>
             </article>
 
@@ -104,8 +107,10 @@
                 <img src="public/assets/imgProjetCivilipedia.jpg" alt="Image de mon projet Civilipédia" class="imgCard">
                 <div class="dataCard">
                     <h2 class="titleCard">Civilipédia</h2>
+                    <span class="badgeProject">PHP</span>
+                    <span class="badgeProject">Equipe</span>
                     <span class="bioCard">Projet scolaire d'un wiki collaboratif autour des grandes civilisations.</span>
-                    <a href="#" class="buttonCard">En savoir plus</a>
+                    <a href="#" class="buttonCard">Voir la démo</a>
                 </div>
             </article>
 
@@ -114,8 +119,9 @@
                 <img src="public/assets/imgProjetCiteOr.jpg" alt="Image de mon projet FanSite" class="imgCard">
                 <div class="dataCard">
                     <h2 class="titleCard">FanSite - Cité D'or</h2>
+                    <span class="badgeProject">PHP</span>
                     <span class="bioCard">FanSite sur une œuvre marquante, pour un projet scolaire.</span>
-                    <a href="#" class="buttonCard">En savoir plus</a>
+                    <a href="#" class="buttonCard">Voir la démo</a>
                 </div>
             </article>
 
