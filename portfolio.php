@@ -98,7 +98,7 @@
                     <span class="badgeProject">PHP</span>
                     <span class="badgeProject">SQL</span>
                     <span class="bioCard">Site vitrine réalisé de A à Z pour une entreprise d'audiovisuelle à Riom.</span>
-                    <a href="#" class="buttonCard">En cours de construction</a>
+                    <a href="#" target="_blank" class="buttonCard" style="pointer-events: none;">En cours de construction</a>
                 </div>
             </article>
 
@@ -110,7 +110,7 @@
                     <span class="badgeProject">PHP</span>
                     <span class="badgeProject">Equipe</span>
                     <span class="bioCard">Projet scolaire d'un wiki collaboratif autour des grandes civilisations.</span>
-                    <a href="https://sio.jbdelasalle.com/~jfrachisse/TP_Wiki/home.php" class="buttonCard">Voir la démo</a>
+                    <a href="https://sio.jbdelasalle.com/~jfrachisse/TP_Wiki/home.php" target="_blank" class="buttonCard">Voir la démo</a>
                 </div>
             </article>
 
@@ -121,7 +121,7 @@
                     <h2 class="titleCard">FanSite - Cité D'or</h2>
                     <span class="badgeProject">PHP</span>
                     <span class="bioCard">FanSite sur une œuvre marquante, pour un projet scolaire.</span>
-                    <a href="https://sio.jbdelasalle.com/~jfrachisse/TP_FanSite/CodeSource/home.php" class="buttonCard">Voir la démo</a>
+                    <a href="https://sio.jbdelasalle.com/~jfrachisse/TP_FanSite/CodeSource/home.php" target="_blank" class="buttonCard">Voir la démo</a>
                 </div>
             </article>
 
